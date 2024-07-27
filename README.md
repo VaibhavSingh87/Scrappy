@@ -18,3 +18,61 @@ Welcome to **Scrappy**, your go-to website for waste detection and eco-friendly 
 5. **Participate in Events** 🗓️: Join eco-friendly events and make a difference.
 6. **Donate** 🌳: Contribute to a greener planet by donating for tree planting and dustbins.
 
+## 🎯 Getting Started
+
+To get started with Scrappy, follow these steps:
+
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/VaibhavSingh87/scrappy.git
+    cd scrappy
+    ```
+
+2. **Install Dependencies for the Frontend**:
+    ```bash
+    cd client
+    npm install
+    ```
+
+3. **Install Dependencies for the Backend**:
+    ```bash
+    cd ../server
+    npm install
+    ```
+
+4. **Run the Flask Server**:
+    ```bash
+    cd ../model
+    flask run
+    ```
+
+5. **Run the Backend Server**:
+    ```bash
+    cd ../server
+    nodemon ./index.js
+    ```
+
+6. **Run the Frontend Application**:
+    ```bash
+    cd ../client
+    npm start
+    ```
+
+7. **Open Your Browser**:
+    Navigate to `http://localhost:3000` to start using Scrappy!
+
+## 🛠️ Technologies Used
+
+- **Frontend**: React.js, TailwindCSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **AI Model Server**: Flask
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Here's how you can help:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Submit a pull request.
