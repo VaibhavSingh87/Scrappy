@@ -11,40 +11,21 @@ jobs:
     executor: aws
     steps:
       - checkout
-      
+
       - run:
-          name: Change directory to backend
+          name: Upload to S3
           command: |
             cd /root/project/server
-            ls
-            pwd
-
+            aws --region ap-south-1 deploy push --application-name Deployment_App --s3-location s3://code-bucket-87/backend.zip
+            aws --region ap-south-1 deploy create-deployment --application-name Deployment_App --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name Application_Deployment_Group --s3-location bucket=code-bucket-87,bundleType=zip,key=backend.zip
+                  
       - run:
           name: Upload to S3
-          command: |
-            aws --region ap-south-1 deploy push --application-name Deployment_App --s3-location s3://code-bucket-87/backend.zip
-      
-      # Create deployment in CodeDeploy
-      - run:
-          name: Create CodeDeploy Deployment
-          command: |
-            aws --region ap-south-1 deploy create-deployment --application-name Deployment_App --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name Application_Deployment_Group --s3-location bucket=code-bucket-87,bundleType=zip,key=backend.zip
-    
-      - run:
-          name: Change directory to frontend
           command: |
             cd /root/project/client
-
-      - run:
-          name: Upload to S3
-          command: |
             aws --region ap-south-1 deploy push --application-name Deployment_App --s3-location s3://code-bucket-87/app.zip
-      
-      # Create deployment in CodeDeploy
-      - run:
-          name: Create CodeDeploy Deployment
-          command: |
             aws --region ap-south-1 deploy create-deployment --application-name Deployment_App --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name Application_Deployment_Group --s3-location bucket=code-bucket-87,bundleType=zip,key=app.zip
+            
 
 workflows:
   deploy:
