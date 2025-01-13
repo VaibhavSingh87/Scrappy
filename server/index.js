@@ -12,7 +12,7 @@ const MONGO_URI = process.env.MONGO_URI ;
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(MONGO_URI)
+mongoose.connect("mongodb+srv://vaibhav:cicd@major.0s5gr.mongodb.net/?retryWrites=true&w=majority&appName=Major")
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
 

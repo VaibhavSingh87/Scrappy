@@ -8,7 +8,7 @@ const Landing2 = () => {
         <button data-text="Awesome" class="button">
           <span class="actual-text">&nbsp;EStash&nbsp;</span>
           <span class="hover-text" aria-hidden="true">
-            &nbsp;EStash&nbsp;
+            &nbsp;EStash-1&nbsp;
           </span>
         </button>
       </div>
