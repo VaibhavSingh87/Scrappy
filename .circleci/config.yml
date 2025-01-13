@@ -15,11 +15,7 @@ jobs:
       - run:
           name: Change directory to backend
           command: |
-            cd ./server
-      - run:
-          name: Change directory to backend
-          command: |
-            ls
+            cd server
 
       - run:
           name: Upload to S3
