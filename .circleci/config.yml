@@ -11,13 +11,6 @@ jobs:
     executor: aws
     steps:
       - checkout
-
-      - run:
-          name: Upload to S3
-          command: |
-            cd /root/project/server
-            aws --region ap-south-1 deploy push --application-name Deployment_App --s3-location s3://code-bucket-87/backend.zip
-            aws --region ap-south-1 deploy create-deployment --application-name Deployment_App --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name Application_Deployment_Group --s3-location bucket=code-bucket-87,bundleType=zip,key=backend.zip
                   
       - run:
           name: Upload to S3
