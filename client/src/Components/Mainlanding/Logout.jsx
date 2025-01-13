@@ -1,9 +1,9 @@
 import React from 'react';
-import {useNavigate } from 'react-router-dom';
+// import {useNavigate } from 'react-router-dom';
 import "../../CSS/logout.css"
 function Logout() {
-    const navigate = useNavigate;
-    const token = localStorage.getItem("token");
+    // const navigate = useNavigate;
+    // const token = localStorage.getItem("token");
 
     const handleLogout = async () => {
     localStorage.removeItem('token'); 

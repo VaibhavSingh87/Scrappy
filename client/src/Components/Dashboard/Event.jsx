@@ -22,7 +22,7 @@ const EventList = () => {
     if (!isDataFetched) {
       fetchEventDetails();
     }
-  }, []);
+  }, [isDataFetched]);
 
   return (
     <div>

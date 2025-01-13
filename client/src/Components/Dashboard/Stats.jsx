@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 const Stats = () => {
-  const [totalPoints, setTotalPoints] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [, setTotalPoints] = useState(0);
+  const [, setLoading] = useState(true);
+  const [, setError] = useState(null);
 
   useEffect(() => {
     async function fetchPoints() {

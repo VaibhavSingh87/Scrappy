@@ -24,8 +24,8 @@ const Footer = () => {
             <p className="mb-4 hidden md:block text-base text-gray-400">
             Introducing our innovative app that revolutionizes cleanliness and environmental stewardship. Track individual contributions, view real-time garbage stats, and compete on a gamified leaderboard. Host eco-friendly events, donate for tree plantation and local dustbins. Join us in making a lasting impact on our planet.
             </p>
-            <a
-              href="#"
+            <span
+              // href="#"
               class="inline-flex text-sm items-center text-blue-600 hover:underline lg:mt-4"
             >
               Learn More
@@ -38,7 +38,7 @@ const Footer = () => {
                 <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
                 <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
               </svg>
-            </a>
+            </span>
           </div>
         </div>
       </div>
