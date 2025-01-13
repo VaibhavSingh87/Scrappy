@@ -15,7 +15,7 @@ jobs:
       - run:
           name: Change directory to backend
           command: |
-            cd server
+            cd /root/project/server
 
       - run:
           name: Upload to S3
@@ -31,7 +31,7 @@ jobs:
       - run:
           name: Change directory to frontend
           command: |
-            cd ./client
+            cd /root/project/client
 
       - run:
           name: Upload to S3
