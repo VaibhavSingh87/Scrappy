@@ -126,7 +126,7 @@ const Signup = ({ setToken }) => {
         <div className="relative mb-6 flex justify-center align-middle">
           <h4 className="text-sm text-white">Not a member?</h4>
           <Link to="/register" className="text-sm text-blue-400 underline px-2 cursor-pointer">
-            Register
+            Registerrrrrr
           </Link>
         </div>
       </form>
